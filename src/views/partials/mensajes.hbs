@@ -1,0 +1,26 @@
+{{!-- mensajes de error --}}
+{{#if error }}
+    <div class="toast alert alert-danger bg-danger align-items-center position-absolute bottom-0 end-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+            <p class="text-light alert-mensajes">{{ error }}</p>
+            </div>
+        </div>
+    </div>
+{{/if}}
+
+{{!-- mensajes correctos --}}
+{{#if satisfactorio }}
+    <div class="toast alert alert-success bg-success align-items-center position-absolute bottom-0 end-0" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+        <div class="toast-body">
+        <p class="text-light alert-mensajes">{{ satisfactorio }}</p>
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<script>
+    $("#alert-mensajes-error").fadeTo("slow",0.5);
+</script>
+

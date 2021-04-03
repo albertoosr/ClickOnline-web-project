@@ -1,0 +1,49 @@
+<section id="perfil">
+    <div class="container">
+      <div class="streaming">
+          <h2 class="titulo-perfil fw-bold">Tu perfil <i class='bx bxs-user text-warning bx-burst fs-2'></i></h2>
+          <p class="text-info-perfil fs-4"><strong>Alberto</strong>, puedes verificar tu información y actualizar al mismo tiempo</p>
+          <div class="row">
+            <div class="col-lg-3">
+                <div class="informacion-primero mb-5">
+                  <h3 class="title-datos-perfil">Tus datos de tu perfil</h3>
+                  <p class="text-datos-perfil">Aquí puedes visualizar los datos de tu perfil, 
+                    donde podrás eliminar tu cuenta o bien, podrás actualizar tus datos.</p>
+                </div>
+                <div class="informacion-primero mb-5">
+                  <h3 class="title-datos-perfil">¿Ocurre algun problema?</h3>
+                  <p class="text-datos-perfil">Si cuentas con algún inconveniente en nuestro sistema, 
+                    puedes enviarnos un correo electrónico a nuestro soporte donde podremos atenderte. </p>
+                </div>
+            </div>
+            <div class="col-lg-7">
+              <form action="/user/edit" method="post" class="form-perfil">
+                  <div class="mb-3">
+                    <label for="nombrePerfil" class="form-label">Nombre <span class="text-danger"> *</span></label>
+                    <input type="text" name="nombre" class="form-control" id="nombrePerfil" value="{{ usuario.nombre }}">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo Electronico <span class="text-danger"> *</span></label>
+                    <input type="email" name="correo" class="form-control" id="exampleInputEmail1" value="{{ usuario.correo }}">
+                  </div>
+
+                  <div class="mb-4">
+                    <label for="descrio" class="youdescription">Tu Descripción</label>
+                  </div>
+
+                  <div class="mb-3 pb-5">
+                    <label for="descrip" class="form-label">Descripción <span class="text-danger"> *</span></label><br>
+                    <textarea name="descripcion" class="form-control" id="descrip" rows="10">{{ usuario.descripcion }}</textarea>
+                  </div>
+                  <div class="mb-3">
+                    <input type="submit" class="btn btn-success" value="Actualizar">
+                    <a class="btn btn-danger fs-4" href="/user/delete">Elimnar cuenta</a>
+                  </div>
+              </form>       
+              <label class="text-info-delete fst-italic">Si deseas eliminar tu cuenta, toda tu información sera eliminado
+                y no se tendra ningun resguardo <span class="text-danger"> *</span></label>
+            </div>
+          </div>
+      </div>  
+    </div>
+</section>

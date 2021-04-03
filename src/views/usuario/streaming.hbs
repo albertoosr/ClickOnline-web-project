@@ -1,0 +1,189 @@
+<style>
+    #video-preview-grid {
+        background-repeat: no-repeat;
+    }
+
+    video {
+        border: .2rem solid #b90e11;
+        background-repeat: no-repeat;
+    }
+</style>
+
+<section id="startStreming" class="bg-dark">
+    <div class="container">
+        <div class="streamInfo py-5">
+            <div class="row justify-content-between">
+                <div class="col-lg-5">
+                    <h2 class="ext-star-streaming text-white">Inicia a <strong>transmitir</strong> ahora mismo.</h2>
+                </div>
+                <div class="col-lg-4">
+                    <div class="col-lg-12">
+                        <a class="btn btn-streaming-start btn-publicar" href="/user/roomstream">Iniciar Streaming</a>
+                        <a href="#requerimientos-stream" class="btn btn-streaming-start btn-success">Herramientas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <label class="text-stream-previo text-white pt-3 pb-2">Vista preliminar de la transmisión</label>
+        <p class="text-white fs-5 fst-italic mb-5"><span class="text-danger">* </span>Recuerda que debes contar con una camara y microfono, si es necesario por favor
+        de otorgar los permisos necesarios</p>
+        <div class="row justify-content-between">
+            <div class="col-lg-2">
+                <label class="text-consejo text-white text-uppercase">consejos</label>
+                <div class="card card-stream">
+                    <div class="card-body card-body-stream pb-5">
+                        <h4 class="card-title card-streaming-title text-center">Antes de iniciar tu streaming</h4>
+                        <p class="card-text card-streaming-info">Te recomendamos leer las herramientas que puedes utilizar, 
+                            de esta manera tendrás una mejor transmisión para tus alumnos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="mx-auto pb-5">
+                    <div class="col-lg-6 video-previo-streamn">
+                        <video id="my-video"
+                        id="my-video"
+                        class="video-js video-streming-previo mx-auto"
+                        controls
+                        preload="auto"
+                        poster="/img/global/livenow-portada.png"
+                        data-setup="{}">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 div-chat">
+                <label class="text-chat-previo text-white  fw-bold">Chat</label> <br>
+                <div class="chat">
+                    <label class="text-center text-light mt-5 fs-5 fst-italic">Podrás visualizar los comentarios de otros usuario</label>
+                </div>
+                <input class="chat-text form-control" type="text" placeholder="Escribe algo..">
+                <p class="text-white fs-5 fst-italic mb-5 text-center mt-3"><span class="text-danger">*</span> Solo preciona <strong>Enter</strong> para enviar tu mensaje, recuerda que todos 
+                los usuario podrán ver lo que comentas</p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section id="requerimiento-live">
+    <div class="container">
+        <h2 class="text-herramientas">Toma en cuenta esto <i class='bx bxs-bell-ring bx-tada text-warning'></i></h2>
+        <label class="moreconsejos fs-4 pb-4">Para tener una mejor transmisión verifica</label>
+        <div class="row justify-content-around">
+            <div class="col-lg-4">
+                <ul class="lista-consejos">
+                    <li><i class='bx bx-right-arrow text-warning'></i> Tu conexión a internet</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <ul class="lista-consejos">
+                    <li><i class='bx bx-right-arrow text-warning'></i> La calidad de transmisión de tu cámara</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <ul class="lista-consejos">
+                    <li><i class='bx bx-right-arrow text-warning'></i> Que tu micrófono  no este dañado</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section id="requerimientos-stream" class="py-5">
+    <div class="container">
+        <h2 class="text-herramientas">Herramientas <i class='bx bxs-bulb bx-burst text-warning'></i></h2>
+        <label class="moreconsejos fs-4 pb-4">Estas son algunas herramientas que necesitas para iniciar 
+            tu transmisión :)
+        </label>
+        <div class="row justify-content-between">
+             <div class="col-lg-3">
+                <div class="card card-herramientas">
+                    <img class="img-microfono" src="/img/global/ordenador.jpg" class="card-img-top" alt="microfono">
+                    <div class="card-body card-body-herramientas">
+                        <h5 class="card-title card-title-herramientas">Ordenador</h5>
+                        <p class="card-text card-text-herramientas">Debes de contar con un ordenador para poder realizar tu streaming, 
+                            así tendrás una mejor experiencia para ti y para tus estudiantes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-2">
+                <div class="card card-herramientas">
+                    <img class="img-permisos" src="/img/global/permisos.png" class="card-img-top" alt="permisos">
+                    <div class="card-body card-body-herramientas">
+                        <h5 class="card-title card-title-herramientas">Permisos de acceso</h5>
+                        <p class="card-text card-text-herramientas">Dependiendo de tu navegador posiblemente te pedirá acceso a 
+                            tu cámara y micrófono, es importante otorgar los permisos necesarios.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-2">
+                <div class="card card-herramientas">
+                    <img class="img-camara"  src="/img/global/camara.jpg" class="card-img-top" alt="camara">
+                    <div class="card-body card-body-herramientas">
+                        <h5 class="card-title card-title-herramientas">WebCam</h5>
+                        <p class="card-text card-text-herramientas">Debes de contar con una cámara interno o externa, 
+                            de esta manera podrás obtener una mejor experiencia verifica que la cámara tenga calidad en imagen. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card card-herramientas">
+                    <img class="img-microfono" src="/img/global/microfono.jpg" class="card-img-top" alt="microfono">
+                    <div class="card-body card-body-herramientas">
+                        <h5 class="card-title card-title-herramientas">Micrófono</h5>
+                        <p class="card-text card-text-herramientas">Debes de contar con un micrófono sea interno o externo a tu ordenador, 
+                            verifica que no se encuentre dañado y la calidad de sonido sea buena. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="requerimiento-live">
+    <div class="container">
+        <h2 class="text-herramientas">¿Tienes streamings publicados? <i class='bx bx-refresh bx-tada text-warning'></i></h2>
+        <label class="moreconsejos fs-4">Visualiza tus streaming que ya publicaste, solo da click en el siguiente botón </label>
+        <a href="" class="view-streaming" data-bs-toggle="modal" data-bs-target="#satreampublicados">Streaming publicados</a>
+    </div>
+</section>
+
+<!-- ventanda modal -->
+<div class="modal fade" id="satreampublicados" tabindex="-1" aria-labelledby="satreampublicados" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title title-live">Streaming Publicados</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body border-0">
+        <div class="row">
+            <div class="stream">
+                <table class="table">
+                <thead>
+                    <tr>
+                    <th>Nombre </th>
+                    <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each stream}}
+                    <tr>
+                    <td>{{ titulo }}</td>
+                    <td><a class="btn btn-danger fs-5" href="/streamdelete/{{id}}">Eliminar</a></td>
+                    </tr>
+                     {{/each}}
+                </tbody>
+                </table>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+<!-- scripts -->
+<script defer src="/js/preview.js"></script>

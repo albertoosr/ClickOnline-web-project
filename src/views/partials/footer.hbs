@@ -1,0 +1,59 @@
+<section id="footer">
+    <div class="container footer-page py-5">
+        <div class="row justify-content-between">
+            <div class="col-lg-3">
+            <a class="text-white logo-footer" href="./">Click Online</a>
+            <p class="text-light fw-300 parrafo-footer">Click Online ofrece una manera más sencilla de poder 
+                capacitarse mediante cursos online en vivo, con simplemente crear una cuenta, tener un dispositivo 
+                con acceso a internet y podrás disfrutar el curso que hayas seleccionado.</p>
+          </div>
+          <div class="col-lg-3 espacio-reponsivo">
+            <label for="" class="titulos-label-footer">Atajos del Sitio Web</label>
+            <ul class="list-redes-footer list-group">
+            {{#if usuario}}
+              <li class="list-group-item-footer"><a href="/"><i class='bx bx-wifi-1'></i> Inicio</a></li>
+              <li class="list-group-item-footer"><a href="#about"><i class='bx bx-wifi-1'></i> Live</a></li>
+              <li class="list-group-item-footer"><a href="#require"><i class='bx bx-wifi-1'></i> Streaming</a></li>
+              <li class="list-group-item-footer"><a href="#streaming"><i class='bx bx-wifi-1'></i> Perfil</a></li>
+              <li class="list-group-item-footer"><a href="#contact"><i class='bx bx-wifi-1'></i> Desconectar</a></li>
+            {{ else }}
+              <li class="list-group-item-footer"><a href="/"><i class='bx bx-wifi-1'></i> Inicio</a></li>
+              <li class="list-group-item-footer"><a href="#about"><i class='bx bx-wifi-1'></i> Nosotros</a></li>
+              <li class="list-group-item-footer"><a href="#require"><i class='bx bx-wifi-1'></i> Servicio</a></li>
+              <li class="list-group-item-footer"><a href="#streaming"><i class='bx bx-wifi-1'></i> Streaming</a></li>
+              <li class="list-group-item-footer"><a href="#contact"><i class='bx bx-wifi-1'></i> Registrate</a></li>
+              <li class="list-group-item-footer"><a href="#" data-bs-toggle="modal" data-bs-target="#login"><i class='bx bx-wifi-1'></i> Inicio Sesiòn</a></li>
+            {{/if}}
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <label for="" class="titulos-label-footer">Dudas y Aclaraciones</label>
+              <p class="parrafo-text-footer"><strong>Teléfono: </strong>+52 554 764 1223</p>
+              <p class="parrafo-text-footer"><strong>Email: </strong>clickonlineinfo@cliconline.com</p>
+          </div>
+          <div class="col-lg-3">
+            <label for="" class="titulos-label-footer">Únete a Nosotros</label>
+              <p class="parrafo-text-footer">Click Online la mejor plataforma de streaming de cursos online.</p>
+          </div>
+        </div>
+    </div>
+    <div class="container pt-5">
+        <div class="row justify-content-between">
+            <div class="col-lg-8">
+                <div class="copyright">
+                    © Copyright <strong>Click Online.</strong> Todos los derechos reservados 
+                </div>
+                <div class="credits">
+                    Diseñado por <a class="liga-footer" target="_blank" href="https://consultores-revolucionarios-en-tecnologia-s-a-s-de-c-v.ueniweb.com/">Consultores Revolucionarios En Tecnología</a>
+                </div>
+            </div>
+            <div class="icons-social text-center col-lg-4">
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="#"><i class='bx bxl-google' ></i></a>
+            </div>
+        </div>
+    </div>
+</section>

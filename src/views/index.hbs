@@ -1,0 +1,372 @@
+<!-- login - inicio de sesion -->
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-top">
+      <div class="modal-header border-0 ">
+        <h2 class="text-cente fw-bold"><img src="/img/global/logo-login.png"> ¡Indentificate Ahora!</h2>
+      </div>
+      <div class="close-boton">
+        <i class='bx bx-x ' data-bs-dismiss="modal" aria-label="Close"></i>
+      </div>
+      <div class="modal-body">
+        <label class="title-login-label" for="login">Iniciar Sesión</label>
+        <div class="row">
+          <div class="col-lg-12">
+            <form action="/login" method="post" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo Electronico</label>
+                <input type="email" class="form-control" name="correo" id="email" placeholder="Ejemplo: usuario@dominio.com" aria-describedby="emailHelp" required>
+                <div class="invalid-feedback">Por favor ingrese correo valido</div>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" name="contrasena" id="password" required>
+                <div id="toggle" onclick="showHide()"><i class='bx bx-show' id="passwordHide"></i></div>
+                <div class="invalid-feedback">Por favor ingrese correo valido</div>
+              </div>
+              <div class="mb-3 mt-5">
+                <input type="submit" class="btn btn-login-sesion" value="iniciar sesión">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- sección 1-->
+<section id="moreInfo">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="150">
+        <h2 class="title-section">+Más de 10 en vivos trasmitiendo <span class="color-span">AHORA </span>¡Registrate!</h2>
+        <p class="section1-description">Click Online te ofrece la manera más sencilla de aprender, solo necesitas crear una cuenta, 
+          un dispositivo con conexión a internet y es todo, ¿Qué estás esperando?
+        </p>
+      </div>
+      <div class="col-lg-4">
+          <img src="/img/global/livenow.gif" class="gif-envivo mx-auto" alt="gif live">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- sección 2 -->
+<section id="about">
+  <div class="container">
+    <h2 class="text-center title-about"><span class="bage-color-h2 badge rounded-pill bg-danger">CLICK ONLINE</span></h2>
+    <h3 class="text-center text-h3-section">Acerca de <strong>Nostros</strong></h3>
+    <p class="text-parrafo-section">Click Online la mejor plataforma de streaming para cursos online.</p>
+    <div class="row content">
+      <div class="col-lg-6 pb-3" data-aos="fade-up" data-aos-delay="70">
+        <p class="p-text-description">Te ofrecemos las mejores transmisiones live importado por instructores expertos, 
+          no te quedes con la ganas de aprender de una manera fácil.</p>
+        <ul class="nav-li-section">
+          <label class="title-login-label" for="caracteristicas ">Características</label>
+          <li><i class='bx bx-wifi-2 text-danger'></i> Transmisión en directo</li>
+          <li><i class='bx bx-wifi-2 text-warning'></i> Chat en directo y Preguntas y respuestas</li>
+          <li><i class='bx bx-wifi-2 text-primary'></i> Calidad del reproductor de servicio</li>
+          <li><i class='bx bx-wifi-2 text-info'></i> Diversos cursos online</li>
+        </ul>
+      </div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <p class="p-text-description lh-sm">Click Online una plataforma Web utilizando la tecnología de streaming 
+          con la finalidad de poder ofrecer una manera más sencilla de aprender con instructores con mayor 
+          capacitación haciendo que los estudiantes tengan una mejor comprensión de los temas mostrados, 
+          lo únicos recursos que son importantes es contar con un dispositivo, sea móvil, Tablet, computadora, 
+          una conexión a internet, finalmente para formar parte de click online solo debes de crear una cuenta.
+        </p>
+        <a href="" class="btn-learn-more">Más información</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- sección 3-->
+<section id="require" class="requires">
+  <div class="container">
+    <div class="section-title">
+      <h2 class="text-center title-about"><span class="bage-color-h2 badge rounded-pill bg-danger">SERVICIOS</span></h2>
+      <h3 class="text-center text-h3-section">¿Qué necesitas para visualizar <strong>tus clases?</strong></h3>
+      <p class="text-parrafo-section">Para poder visualizar tus en vivos impartidos por tu instructores requieres 
+        de algunos componentes como:</p>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="icon">
+              <i class='bx bxs-user'></i>
+            </div>
+            <h4 class="title">Las ganas de aprender</h4>
+            <p class="description">
+              Capacitate de al un tema que quieras aprender mediante en vivos de los mejores instructores 
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="icon">
+              <i class='bx bxs-user-pin'></i>
+            </div>
+            <h4 class="title">Crea una cuenta</h4>
+            <p class="description">
+              Crea una cuenta de forma gratuita, disfruta cada una de nuestras clases que tenemos para ti
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="icon">
+              <i class='bx bx-desktop'></i>
+            </div>
+            <h4 class="title">Dispositivo</h4>
+            <p class="description">
+              Puedes ver tus clases en cualquier dispositivo, como un Smartphone, Tablet, Computadora, entre otros
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="icon">
+              <i class='bx bx-wifi' ></i>
+            </div>
+            <h4 class="title">Conexión a Internet</h4>
+            <p class="description">
+              Conecta tu dispositivo a servicio de internet ingresa a tu cuenta y podrás visualizar tu clase seleccionada.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- section 4-->
+<section id="streaming">
+  <div class="container">
+    <div class="text-center">
+      <h3 class="text-white title-streaming">Streaming</h3>
+      <p class="informacion-streaming">Disfruta de los mejores en vivos transmitidos por los instructores <br>
+        capacitados en el tema que deseas aprender, todo esto sin necesidad de descargar ninguna aplicaciòn o vídeos.</p>
+        <div data-aos="fade-up" data-aos-delay="150"><a href="#" class="btn-streming">Streaming Ahora</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- sección 5 -->
+<section id="contact">
+  <div class="container">
+    <div class="section-title">
+      <h2 class="text-center title-about"><span class="bage-color-h2  badge rounded-pill bg-danger">DUDAS Y ACLARACIONES</span></h2>
+      <h3 class="text-center text-h3-section">Preguntas <strong>Frecuentes</strong></h3>
+      <p class="text-parrafo-section">Estas son algunas preguntas frecuentes que nuestros usuarios suelen solicitar.</p>
+    </div>
+    <div class="row mt-5 justify-content-around">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <ul class="faq-list">
+            {{!-- numero 1 --}}
+            <li class="item-question">
+              <a class="btn-question" data-bs-toggle="collapse" data-bs-target="#questionOne">¿Qué es Click Online? <i class='bx bxs-chevron-down'></i></a>
+              <div id="questionOne" class="collapse show">
+                <p class="info-question">
+                  Click Online es una plataforma de tecnología multimedia encargada de realizar en videos en vivo para cualquier 
+                  usuario que requiera iniciar un en vivo ayudando a capacitar a otros usuarios.
+                </p>
+              </div>
+            </li>
+            {{!-- numero 2 --}}
+            <li class="item-question">
+              <a class="btn-question"  data-bs-toggle="collapse" data-bs-target="#questionTwo">¿Qué requiero para tomar los cursos? <i class='bx bxs-chevron-down'></i></a>
+              <div id="questionTwo" class="collapse show">
+                <p class="info-question">
+                  Para tomar algún curso de tu agrado solo requieres un dispositivo con conexión a internet y disfrutar el en vivo.
+                </p>
+              </div>
+            </li>
+            {{!-- numero 3 --}}
+            <li class="item-question">
+              <a class="btn-question"  data-bs-toggle="collapse" data-bs-target="#questionThree">¿Puedo visualizar los cursos en cualquier lugar?<i class='bx bxs-chevron-down'></i></a>
+              <div id="questionThree" class="collapse show">
+                <p class="info-question">
+                  Sí, todo lo que necesitas es contar con un dispositivo con conexión a internet, es muy sencillo poder visualizar tus cursos. 
+                </p>
+              </div>
+            </li>
+            {{!-- numero 4 --}}
+            <li class="item-question">
+              <a class="btn-question"  data-bs-toggle="collapse" data-bs-target="#questionFor">¿Debo de tener cámara y audio activo en mi equipo? <i class='bx bxs-chevron-down'></i></a>
+              <div id="questionFor" class="collapse show">
+                <p class="info-question">
+                  Si deseas realizar una transmisión es necesario contar con una WebCam y micrófono, de los contrario solo disfrutar de la transmisión. 
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+         <div class="modal-header border-0 ">
+            <h2 class="text-cente fw-bold"><img src="/img/global/logo-login.png">¡RegistrateAhora!</h2>
+          </div>
+           <label class="title-login-label" for="login">Registrate Ahora</label>
+          <form  action="/register" method="POST" class="row g-3 needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre(s) <span class="text-danger"> *</span></label>
+                <input type="text" class="form-control" name="nombre" id="email"  required>
+                <div class="invalid-feedback">Ingresa un nombre</div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electronico <span class="text-danger"> *</span></label>
+                <input type="email" class="form-control" name="correo" id="email" placeholder="Ejemplo: usuario@dominio.com" aria-describedby="emailHelp" required>
+                <div class="invalid-feedback">Ingresa un correo electronico</div>
+              </div>
+              <div class="mb-3">
+                <div class="progress" id="barProgress">
+                  <div id="barOne" class="" role="progressbar" style="width: 35%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div id="barTwo" class="" role="progressbar" style="width: 35%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div id="barTheer" class="" role="progressbar" style="width: 30%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <label for="password" class="form-label">Contraseña <span class="text-danger"> *</span></label>
+                <input type="password" class="form-control" name="contrasena" id="passwordRegister" required>
+                <div id="toggleRegister" onclick="showHideRegister()"> <i class='bx bx-show' id="passwordHide" ></i></div>
+                <span id="mensaje-password"></span>
+                <div class="invalid-feedback">Ingresa una contraseña</div>
+              </div>
+            <label for="fechaNacimiento" class="form-label pb-3">Fecha de nacimiento</label>
+            <div class="col-md-3">
+              <label for="validationCustom03" class="form-label">Dia <span class="text-danger"> *</span></label>
+              <input type="text" class="form-control" name="dia" id="diaRegister" required>
+              <div class="invalid-feedback">
+                Ingresa un día
+              </div>
+            </div>
+            <div class="col-md-6">    
+              <label for="validationCustom04" class="form-label">Mes <span class="text-danger"> *</span></label>
+              <select class="form-select" name="mes" id="mesRegister" required>
+                <option selected disabled value="">Mes</option>
+                <option value="Enero">Enero</option> 
+                <option value="Febrero">Febrero</option> 
+                <option value="Marzo">Marzo</option> 
+                <option value="Abril">Abril</option> 
+                <option value="Mayo">Mayo</option> 
+                <option value="Junio">Junio</option> 
+                <option value="Julio">Julio</option> 
+                <option value="Agosto">Agosto</option> 
+                <option value="Septiembre">Septiembre</option> 
+                <option value="Octubre">Octubre</option> 
+                <option value="Noviembre">Noviembre</option> 
+                <option value="Diciembre">Diciembre</option> 
+              </select>
+              <div class="invalid-feedback">
+                Selecciona un mes
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Año <span class="text-danger"> *</span></label>
+              <input type="text" class="form-control" name="ano" id="anoRegister" required>
+              <div class="invalid-feedback">
+                Ingresa un año
+              </div>
+            </div>
+            <div class="col-12">
+              <p class="text-center mt-4 termino-text">Al hacer clic en Registrarse, indicas que has leído y aceptas los Términos del servicio y el Aviso de privacidad.</p>
+            </div>
+            <div class="mb-3 mt-5">
+              <input type="submit" class="btn btn-login-sesion" value="Registrame">
+            </div>
+          </form>
+        </div>
+    </div>
+  </div>
+</section>
+
+<script>
+// Form validate
+  var forms = document.querySelectorAll('.needs-validation')
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+
+// password validate
+const mayus = new RegExp("^(?=.*[A-Z].*[A-Z].*[A-Z])");
+const special = new RegExp("^(?=.*[!@#$%&*].*[!@#$%&*])");
+const numbers = new RegExp("^(?=.*[0-9])");
+const lower = new RegExp("^(?=.*[a-z])");
+const len = new RegExp("^(?=.{8,})");
+
+const regExp = [mayus, special, numbers, lower, len];
+
+$("#passwordRegister").on("keyup", () => {
+  var pass = $("#passwordRegister").val();
+  var check = 0;
+
+  for (var i = 0; i < 5; i++) {
+    if(regExp[i].test(pass)){
+      check++;
+    }
+  }
+
+  if(check >= 0 && check <= 2) {
+    const barraone = document.getElementById('barOne');
+    barTwo.classList.remove('bg-warning');
+    barraone.classList.add('bg-danger');
+  } else if(check >= 3 && check <= 4) {
+    const barTwo = document.getElementById('barTwo');
+    barTheer.classList.remove('bg-success');
+    barTwo.classList.add('bg-warning');
+  } else if(check == 5) {
+    const barTheer = document.getElementById('barTheer');
+    barTheer.classList.add('bg-success');
+  } 
+})
+
+// Initi AOS
+window.addEventListener('load', () => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false
+    });
+  });
+
+  /**
+ * toggle password
+ */
+  const password = document.getElementById('password');
+  const toggle = document.getElementById('toggle');
+
+  function showHide() {
+    if (password.type === 'password') {
+      password.setAttribute('type', 'text');
+      toggle.classList.add('hide');
+      password.style.background = 'white';
+    } else {
+      password.setAttribute('type', 'password');
+      toggle.classList.remove('hide');
+      password.style.background = '#0000001A';
+    }
+  }
+
+  const passwordRegister = document.getElementById('passwordRegister');
+  const toggleRegister = document.getElementById('toggleRegister');
+  function showHideRegister() {
+    if (passwordRegister.type === 'password') {
+      passwordRegister.setAttribute('type', 'text');
+      toggleRegister.classList.add('hide')
+      passwordRegister.style.background = 'white';
+    } else {
+      passwordRegister.setAttribute('type', 'password');
+      toggleRegister.classList.remove('hide');
+      password.style.background = '#0000001A';
+    }
+  }
+</script>

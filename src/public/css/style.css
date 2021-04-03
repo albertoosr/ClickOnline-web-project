@@ -1,0 +1,1229 @@
+/*--------------------------------------------------------------
+#
+# Autor: Juan Alberto 
+#
+# Gobales
+--------------------------------------------------------------*/
+:root {
+	--primario: #b90e11;
+	--secundario: #fff;
+	--divscolor: #14151afa;
+}
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+a {
+	text-decoration: none;
+}
+
+html {
+	font-size: 62.5%;
+}
+body {
+	/* font-family: 'Nunito', sans-serif; */
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Nunito', sans-serif;
+	/* font-family: 'Ubuntu', sans-serif; */
+	line-height: 1.5;
+}
+
+input:focus,
+input.form-control:focus {
+	outline: none !important;
+	outline-width: 0 !important;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.color-span {
+	color: var(--primario);
+}
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+.loader-wrapper {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(5, 7, 12, 1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+.loader {
+	display: inline-block;
+	width: 3rem;
+	height: 3rem;
+	position: relative;
+	border: 0.4rem solid var(--secundario);
+	animation: loader 2s infinite ease;
+}
+.loader-inner {
+	vertical-align: top;
+	display: inline-block;
+	width: 100%;
+	background-color: var(--secundario);
+	animation: loader-inner 1s infinite ease-in;
+}
+
+@keyframes loader {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(180deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	75% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes loader-inner {
+	0% {
+		height: 0%;
+	}
+	25% {
+		height: 0%;
+	}
+	50% {
+		height: 100%;
+	}
+	75% {
+		height: 100%;
+	}
+	100% {
+		height: 0%;
+	}
+}
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.logotipo {
+	width: 3.2rem;
+	margin-right: 1.4rem;
+}
+
+.navbar-brand {
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+
+a.nav-link.text-white {
+	font-size: 1.5rem;
+}
+
+/*buton responsibe*/
+button.navbar-toggler {
+	font-size: 3rem;
+	border: none;
+	color: var(--secundario);
+}
+
+button.navbar-toggler:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.bg-color-nav {
+	background: linear-gradient(rgba(5, 7, 12, 0.8), rgba(5, 7, 12, 0.8));
+}
+
+li.nav-item {
+	position: relative;
+}
+
+.navbar-nav li {
+	margin: 0 2rem;
+}
+
+.navbar-nav li::after {
+	content: '';
+	height: 0.2rem;
+	width: 0%;
+	background: #d40b0d;
+	position: absolute;
+	left: 0;
+	bottom: -0.4rem;
+	transition: 0.5s;
+}
+
+.active-link-home::after {
+	content: '';
+	height: 0.2rem;
+	width: 100%;
+	background: var(--primario);
+	position: absolute;
+	left: 0;
+	bottom: -0.4rem;
+	transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+	width: 100%;
+}
+
+#banner-color-image {
+	background-image: url('../img/global/banner.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+h3.welcome.text-center {
+	font-size: 4rem;
+}
+
+.text-3.pb-2 {
+	font-size: 2.7rem;
+}
+
+#typed {
+	font-family: 'Ubuntu', sans-serif;
+	color: rgb(247, 82, 82);
+	font-weight: bold;
+	line-height: 2rem;
+}
+
+h1.title-primary {
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+.typing-text {
+	margin-top: 1.5rem;
+	font-size: 2.3rem;
+}
+
+label.lable-final-text {
+	margin-top: 1.5rem;
+	font-size: 1.5rem;
+	letter-spacing: 0.1rem;
+	font-family: 'Nunito', sans-serif;
+}
+
+.btn-register {
+	font-size: 1.5rem;
+	color: var(--secundario);
+	border: 0.2rem solid var(--primario);
+	padding: 1rem 2rem 1rem 2rem;
+	text-align: center;
+	background: transparent;
+	position: relative;
+	top: 5rem;
+	overflow: hidden;
+}
+
+.btn-hover-register {
+	background: var(--primario);
+	height: 100%;
+	width: 0%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+
+.btn-register:hover .btn-hover-register {
+	width: 100%;
+}
+
+.btn-register:hover {
+	border: 0.2rem solid var(--primario);
+	color: var(--secundario);
+	cursor: pointer;
+}
+
+/*--------------------------------------------------------------
+# Header usuario
+--------------------------------------------------------------*/
+header#headerUsuario {
+	background: rgba(5, 7, 12, 0.9);
+}
+.div-info-user.text-center {
+	font-size: 1.4rem;
+	padding: 2rem 0 2rem 0;
+}
+
+/*--------------------------------------------------------------
+# Preview video
+--------------------------------------------------------------*/
+
+h2.ext-star-streaming.text-white {
+	font-size: 2.2rem;
+	/* text-transform: uppercase; */
+}
+
+input.btn.btn-streaming-start {
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 300;
+	padding: 0.5rem;
+}
+
+input.btn-publicar {
+	background: var(--primario);
+	transition: 0.5s;
+}
+
+input.btn-publicar:hover {
+	background: #d40b0d;
+}
+
+input.btn-herramientas {
+	background: #b90e11c5;
+}
+
+a.btn.btn-streaming-start.btn-publicar {
+    color: #FFF;
+    font-size: 1.4rem;
+    background: var(--primario);
+	transition: 0.5s;
+}
+
+a.btn.btn-streaming-start.btn-publicar:hover {
+	background: #d40b0d;
+}
+
+a.btn.btn-streaming-start.btn-success {
+    font-size: 1.4rem;
+}
+
+label.text-stream-previo.text-white.py-3 {
+	font-weight: 300;
+	margin-bottom: 2rem;
+}
+
+label.text-consejo.text-white.text-uppercase {
+	margin-bottom: 2rem;
+	font-weight: bold;
+	padding-bottom: 0.7rem;
+	border-bottom: 0.2rem solid var(--primario);
+	font-size: 1.4rem;
+}
+
+.card-body.card-body-stream {
+	padding: 1rem 2rem 1rem 2rem;
+	background: var(--divscolor);
+	color: var(--secundario);
+	font-size: 1.4rem;
+}
+
+.card.card-stream {
+	border: none;
+	box-shadow: 0.2rem 0 3.5rem 0#0a344e9c;
+}
+
+/*video-previo*/
+.vjs-poster {
+	/* width: auto; */
+	width: 73vh;
+	height: 50vh;
+}
+
+h4.card-title.card-streaming-title {
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+p.card-text.card-streaming-info {
+	text-align: justify;
+	font-size: 1.3rem;
+	font-weight: 300;
+	margin-bottom: 1rem;
+}
+/*sección previo herrramientas*/
+
+section#requerimientos-stream {
+	background: #212529;
+	color: #fff;
+}
+
+h2.text-herramientas {
+	font-size: 2.2rem;
+	font-weight: bold;
+	line-height: 4rem;
+	margin-bottom: 2rem;
+}
+
+.card.card-herramientas {
+	border: none;
+	background: #191a1e;
+	box-shadow: 0.2rem 0 3.5rem 0#0a344e9c;
+	transition: 0.6s;
+}
+
+.card.card-herramientas:hover {
+	box-shadow: 0.2rem 0 3.5rem 0#d40b0d;
+}
+
+img.img-permisos {
+	width: 20rem;
+	height: 22rem;
+	margin: auto;
+	padding-top: 1rem;
+}
+
+.card-body.card-body-herramientas {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+h5.card-title.card-title-herramientas {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+	font-weight: 800;
+}
+p.card-text.card-text-herramientas {
+	font-size: 1.4rem;
+}
+img.img-camara {
+	width: 30rem;
+	margin: auto;
+}
+
+img.img-microfono {
+	width: 30rem;
+	margin: auto;
+}
+
+section#requerimiento-live {
+	padding: 4rem 0 4rem 0;
+	background: #212529;
+	color: #fff;
+}
+label.moreconsejos.fs-5 {
+	margin-bottom: 2rem;
+}
+ul.lista-consejos {
+	list-style: none;
+	font-size: 1.4rem;
+}
+
+.chat {
+	height: 40rem;
+	border: 0.1rem solid #12547ed8;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+input.chat-text {
+	background: none;
+	border: 0.1rem solid #12547ed8;
+	padding: 1rem 3rem 1rem 3.5rem;
+	color: #fff;
+	font-weight: 300;
+	font-size: 1.4rem;
+}
+
+input.chat-text:focus {
+	background: none;
+	border: 0.1rem solid #12547ed8;
+	color: #fff;
+}
+/*--------------------------------------------------------------
+# login and register
+--------------------------------------------------------------*/
+.close-boton {
+	position: absolute;
+	left: 100%;
+	margin: 0 1rem 0 1rem;
+	font-size: 2.5rem;
+	cursor: pointer;
+	color: #fff;
+}
+
+h2.text-cente.fw-bold {
+	margin: 2rem auto 2rem;
+	font-size: 1.8rem;
+}
+
+.modal-content {
+	padding: 0 2rem 0 2rem;
+	padding-bottom: 4rem;
+	width: 50vh;
+}
+
+.modal-header img {
+	width: 3.5rem;
+	margin: 0 1rem 0 0;
+}
+
+label.title-login-label {
+	margin: 0 0 2rem 0;
+	border-bottom: 0.2rem solid var(--primario);
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+label.form-label {
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+input#email,
+#password,
+#passwordRegister,
+#diaRegister,
+#mesRegister,
+#anoRegister {
+	padding: 0.5rem;
+	font-size: 1.2rem;
+	background: #0000001a;
+	border: 0.2rem solid rgb(206, 206, 206);
+}
+
+input#email:focus,
+#password:focus,
+#passwordRegister:focus,
+#diaRegister:focus,
+#mesRegister:focus,
+#anoRegister:focus {
+	background: #ffff;
+	border: 0.2rem solid var(--primario);
+}
+
+input.btn.btn-login-sesion {
+    padding: .5rem;
+    background: #d40b0ee7;
+    color: var(--secundario);
+    font-size: 1.3rem;
+    width: 100%;
+	border-radius: 0.5rem;
+	opacity: 2rem;
+}
+input.btn.btn-login-sesion:focus {
+	background: var(--primario);
+	box-shadow: 0 0 0 0 var(--primario);
+}
+
+#toggle {
+	position: absolute;
+	font-size: 2rem;
+	top: 63%;
+	right: 2rem;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+div.hide {
+	color: var(--primario);
+	font-weight: bold;
+}
+
+#barOne, #barTwo, #barTheer, #mensaje-password {
+	transition: 0.6s;
+}
+
+#mensaje-password {
+	font-size: 1.3rem;
+}
+/*--------------------------------------------------------------
+# Sectiones
+--------------------------------------------------------------*/
+section#moreInfo {
+	padding: 6rem 0 6rem 0;
+}
+/*more information*/
+#moreInfo,
+#require {
+	background: #17191e;
+	color: #fff;
+}
+
+h2.title-section {
+	font-size: 2.7rem;
+	margin-bottom: 3rem;
+}
+
+img.gif-envivo {
+	width: 19rem;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+p.section1-description {
+	text-align: justify;
+	font-size: 1.5rem;
+}
+
+/*nosotros*/
+section#about,
+section#contact {
+	background: #efefefa6;
+	padding: 7rem 0 7rem 0;
+}
+
+span.bage-color-h2 {
+	font-size: 1.5rem;
+	margin: 0 auto 2rem auto;
+	padding: 1rem 3rem 1rem 3rem;
+}
+
+h3.text-center.text-h3-section {
+	font-size: 3.1rem;
+	margin-bottom: 3rem;
+}
+
+p.text-parrafo-section {
+	font-size: 1.6rem;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 3.5rem;
+}
+
+p.p-text-description {
+	text-align: justify;
+	font-weight: 300;
+	margin-bottom: 4rem;
+}
+
+ul.nav-li-section {
+	list-style: none;
+}
+
+a.btn-learn-more {
+	color: var(--secundario);
+	padding: 1rem 3rem 1rem 3rem;
+	background: #b90e11c5;
+	border-radius: 0.5rem;
+	transition: 0.5s;
+}
+
+a.btn-learn-more:hover {
+	background: #e61215c5;
+}
+/*servicios*/
+section#require,
+section#contact,
+section#streaming {
+	padding: 7rem 0 7rem 0;
+}
+
+/*streaming*/
+section#streaming {
+	background-image: linear-gradient(#0a344e9c, #0a344e9c),
+		url('../img/global/digital-world.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	color: #fff;
+}
+
+h3.text-white.title-streaming {
+	font-size: 3rem;
+	margin-bottom: 3rem;
+	font-weight: 700;
+}
+
+p.informacion-streaming {
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+a.btn-streming {
+	color: var(--secundario);
+	border: 0.2rem solid var(--secundario);
+	padding: 1rem 2rem 1rem 2rem;
+	transition: 0.5s;
+}
+
+a.btn-streming:hover {
+	border: 0.2rem solid var(--primario);
+	color: var(--secundario);
+	background: var(--primario);
+}
+
+/*requerimientos*/
+.requires .icon-box {
+	padding: 6rem 3rem;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0.2rem 0 3.5rem 0#0a344e9c;
+	transition: all 0.3s ease-in-out;
+	border-radius: 0.8rem;
+	z-index: 1;
+	text-align: center;
+}
+
+.requires .icon-box::before {
+	content: '';
+	position: absolute;
+	background: var(--secundario);
+	right: 0;
+	left: 0;
+	bottom: 0;
+	top: 100%;
+	transition: all 0.4s;
+	z-index: -1;
+}
+
+.requires .icon-box:hover::before {
+	background: var(--primario);
+	top: 0;
+	border-radius: 0px;
+}
+
+.requires .icon {
+	margin-bottom: 15px;
+}
+
+.requires .icon i {
+	font-size: 48px;
+	line-height: 1;
+	color: var(--secundario);
+	transition: all 0.3s ease-in-out;
+}
+
+.requires .title {
+	font-weight: 700;
+	margin-bottom: 15px;
+	font-size: 18px;
+}
+
+.requires .title a {
+	color: #111;
+}
+
+.requires .description {
+	font-size: 15px;
+	line-height: 28px;
+	margin-bottom: 0;
+}
+
+.requires .icon-box:hover .title a,
+.requires .icon-box:hover .description {
+	color: var(--secundario);
+}
+
+.requires .icon-box:hover .icon i {
+	color: var(--secundario);
+}
+
+/*aclaraciones*/
+ul.faq-list {
+	list-style: none;
+}
+
+li.item-question {
+	margin-bottom: 1rem;
+}
+
+a.btn-question {
+	color: #000;
+	font-size: 1.7rem;
+	font-family: 'Nunito', serif;
+	font-weight: bold;
+	transition: 0.6s;
+	cursor: pointer;
+}
+
+a.btn-question:hover {
+	color: var(--primario);
+}
+
+p.info-question {
+	font-size: 1.4rem;
+	margin-top: 1rem;
+}
+
+/*registro*/
+
+input#passwordRegister:focus {
+	background-color: var(--secundario);
+}
+
+.pass-ojo {
+	width: 2rem;
+}
+
+#toggleRegister {
+	position: absolute;
+	font-size: 2rem;
+	top: 56%;
+	right: 2rem;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+p.termino-text {
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+
+span#mensaje {
+	font-size: 1.4rem;
+}
+/*--------------------------------------------------------------
+# Mensajes de error
+--------------------------------------------------------------*/
+.alert-mensajes {
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+.alert-succes-stream {
+	display: none;
+}
+
+.alert-display-stream {
+	display: block;
+}
+/*--------------------------------------------------------------
+# Inicio usuario
+--------------------------------------------------------------*/
+section#indexWelcome {
+    padding: 7rem 0 7rem 0;
+    background: #f5f5f5;
+}
+
+section#final-sesction {
+	padding: 6rem 0 6rem 0;
+}
+h2.text-welcome-user {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.info-index-welcome {
+    background: #1e1f24;
+    padding: 4rem;
+    color: var(--secundario);
+    border-radius: 1rem;
+}
+
+h3.text-start-transmitision {
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+
+p.text-start-stream {
+    text-align: justify;
+}
+
+img.img-start-streaming.w-100 {
+    box-shadow: 0.2rem 0 3.5rem 0#176fa79c;
+}
+
+section#indexUser {
+    padding: 5rem 0 5rem 0;
+}
+
+.card-temas {
+	background: #f5f5f5;
+	color: #1e1f24;
+}
+
+.mensaje-perfil {
+    padding: 3rem;
+}
+p.text-navbar-instructor.lh-sm.fst-italic {
+    font-size: 1.5rem;
+}
+
+span.span-studient.badge.bg-warning.text-dark {
+    font-size: 1.4rem;
+}
+/*--------------------------------------------------------------
+# Live usuario
+--------------------------------------------------------------*/
+section#live {
+    padding: 5rem 0 5rem 0;
+    /* background: #f5f5f5; */
+}
+
+h2.text-live-user {
+    font-size: 2.5rem;
+	padding-bottom: 4rem;
+}
+.card.card-live-now.mb-3 {
+    padding: 1.4rem;
+}
+.title-url.card-header {
+    background: #FFF;
+    padding-bottom: 1.5rem;
+}
+
+h2.card-title.card-title-live.text-dark {
+    font-size: 2.4rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+p.text-description-live.card-text {
+    font-size: 1.4rem;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+label.label-live-now.text-time.text-muted.pb-3 {
+    font-size: 1.2rem;
+}
+
+.section-pasos {
+	background: #f5f5f5;
+}
+/*--------------------------------------------------------------
+# chat socket
+--------------------------------------------------------------*/
+#mensajes {
+    width: auto;
+    height: 60vh;
+    border: .1rem solid #afafaf;
+    overflow: scroll;
+}
+
+.username-socket {
+	display: none;
+}
+
+.typing-mensaje{
+	font-size: 1.4rem;
+	padding: 1rem;
+	margin-top: 1rem;
+	width: 89%;
+	border: .1rem solid #afafaf;
+}
+
+button#send {
+    border: none;
+    padding: 1rem;
+    background: var(--primario);
+    font-size: 1.6rem;
+    color: var(--secundario);
+    width: 10%;
+}
+
+
+/*--------------------------------------------------------------
+# Perfil usuario
+--------------------------------------------------------------*/
+section#perfil {
+    padding: 7rem 0 7rem 0;
+}
+
+h2.titulo-perfil.fw-bold {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+p.text-info-perfil {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+textarea#descrip {
+    font-size: 1.4rem;
+}
+
+.form-perfil label {
+	padding: .5rem 0 .5rem 0;
+}
+
+.form-perfil input {
+	font-size: 1.4rem;
+}
+.form-perfil input:focus {
+	border: .1rem solid var(--primario);
+}
+
+textarea:focus, textarea.form-control:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.form-perfil textarea:focus {
+	border: .1rem solid var(--primario);
+}
+
+label.youdescription {
+    padding: 1rem 0 1rem 0;
+    font-weight: bold;
+    border-bottom: .2rem solid var(--primario);
+}
+
+.text-info-delete {
+	font-size: 1.4rem;
+    padding-top: 2rem;
+}
+
+.informacion-primero {
+	border: .1rem solid #b90e116e;
+	border-radius: 1rem;
+	padding: 2rem;
+	text-align: center;
+}
+
+h3.title-datos-perfil {
+    font-size: 2.6rem;
+    padding-bottom: 1rem;
+    font-weight: 800;
+}
+
+p.text-datos-perfil {
+    text-align: justify;
+    line-height: 2rem;
+    font-size: 1.4rem;
+}
+/*--------------------------------------------------------------
+# roomstream
+--------------------------------------------------------------*/
+section#roomStream {
+    background: #f5f5f5;
+    padding: 7rem 0 7rem 0;
+}
+
+a.registrastreaming.btn.btn-success {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+p.text-consejo {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+
+.detalles-stream {
+    margin-top: 3rem;
+}
+
+h3.detalles-titulo {
+    font-weight: bold;
+    padding-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+p.detalle-info {
+    font-size: 1.5rem;
+}
+
+label.link-url {
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 800;
+}
+
+.campos-streaming {
+	padding: 0.5rem;
+	font-size: 1.2rem;
+	background: #0000001a;
+	border: 0.2rem solid rgb(206, 206, 206);
+}
+
+.campos-streaming:focus {
+	background: #ffff;
+	border: 0.2rem solid var(--primario);
+}
+/*--------------------------------------------------------------
+# Lives pubicados
+--------------------------------------------------------------*/
+h3.modal-title.title-live {
+    font-size: 2rem;
+    padding: 2rem 0 2rem 0;
+    font-weight: 700;
+}
+
+a.view-streaming {
+    color: var(--secundario);
+    background: var(--primario);
+    padding: .4rem;
+    border-radius: .5rem;
+}
+/*--------------------------------------------------------------
+# footer
+--------------------------------------------------------------*/
+.footer-page {
+	border-bottom: 0.1rem solid #b90e11;
+}
+
+a.text-white.logo-footer {
+	font-size: 2.2rem;
+	font-weight: bold;
+}
+
+p.text-light.fw-300.parrafo-footer {
+	font-size: 1.4rem;
+	font-weight: 300;
+	text-align: justify;
+	margin: 2rem 3rem 5rem 0;
+}
+
+label.titulos-label-footer {
+	font-size: 1.8rem;
+	margin-bottom: 2rem;
+}
+
+ul.list-redes-footer.list-group {
+	list-style: none;
+}
+
+.list-group-item-footer a {
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+p.parrafo-text-footer {
+	font-size: 1.4rem;
+}
+
+section#footer {
+	background: #17191e;
+	padding: 3rem 0 3rem 0;
+	color: #fff;
+	font-family: 'Nunito', sans-serif;
+}
+
+.copyright {
+	font-size: 1.4rem;
+	margin-bottom: 0.5rem;
+}
+
+.credits {
+	font-size: 1.4rem;
+	margin-bottom: 1.4rem;
+}
+
+.icons-social a i {
+	color: var(--secundario);
+	font-size: 1.7rem;
+	margin-right: 1rem;
+	padding: 0.8rem;
+	background: #cf1d20fb;
+	border-radius: 3rem;
+	transition: 0.5s;
+}
+.icons-social a i:hover {
+	background: var(--primario);
+}
+
+.liga-footer {
+	color: #cf1d20fb;
+	font-weight: bold;
+}
+
+.liga-footer:hover {
+	color: #cf1d20fb;
+}
+/*--------------------------------------------------------------
+# scroll up 
+--------------------------------------------------------------*/
+.scroll-up-btn {
+	position: fixed;
+	height: 4.5rem;
+	width: 4.5rem;
+	background: rgba(5, 7, 12, 0.75);
+	right: 3rem;
+	bottom: 2rem;
+	text-align: center;
+	line-height: 45px;
+	color: var(--secundario);
+	z-index: 9999;
+	font-size: 2.5rem;
+	cursor: pointer;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
+.scroll-up-btn.show {
+	bottom: 3rem;
+	opacity: 1;
+	pointer-events: auto;
+}
+.scroll-up-btn:hover {
+	filter: brightness(90%);
+}
+/*--------------------------------------------------------------
+# media querys
+--------------------------------------------------------------*/
+@media (max-width: 575.98px) {
+	h3.welcome.text-center {
+		font-size: 2rem;
+	}
+	h1.title-primary.mb-2.text-uppercase {
+		font-size: 3rem;
+	}
+	h2.title-section {
+		font-size: 2.3rem;
+		text-align: center;
+	}
+	img.gif-envivo.mx-auto {
+		width: 12rem;
+		margin-top: 2rem;
+	}
+	.typing-text.text-3.mb-3 {
+		font-size: 1.6rem;
+	}
+	label.lable-final-text.mb-3 {
+		font-size: 1.3rem;
+	}
+
+	.col-lg-4.espacio-reponsivo {
+		margin-bottom: 2rem;
+	}
+
+	.vjs-poster {
+		display: none;
+	}
+
+	div#my-video {
+		width: auto;
+	}
+
+	.video-previo-streamn {
+		padding-top: 2rem;
+	}
+
+	
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.vjs-poster {
+		display: none;
+	}
+	div#my-video {
+		width: auto;
+	}
+	.video-previo-streamn {
+		padding-top: 2rem;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+@media (min-width: 1200px) {
+}

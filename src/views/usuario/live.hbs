@@ -1,0 +1,58 @@
+<section id="live">
+    <div class="container">
+        <h2 class="text-live-user"><strong>Alberto</strong>, Estos son los streaming que se encuentran en vivo ¡AHORA!</h2>
+        <div class="row">
+            {{#each links}}
+            <div class="col-lg-3">
+                <div class="card card-live-now mb-3">
+                    <div class="title-url card-header">
+                        <h5 class="badge bg-success"><strong>{{ titulo }}</strong></h5>
+                    </div>
+                    <div class="card-body streaming-live-now">
+                        <a class="liga-live-now" href="{{ url }}">
+                            <h2 class="card-title card-title-live text-dark">{{ titulo }}</h2>
+                        </a>       
+                        <p class="text-description-live card-text">{{ descripcion }}</p>
+                        <label for="" class="pb-3"><span class="badge bg-warning text-dark">Instructor: {{ nombre }}</span></label>
+                        <label class="label-live-now text-time text-muted pb-3">Tiempo publicado: <strong>{{timeago created_at}} </strong></label>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+<section id="final-sesction" class="section-pasos">
+    <div class="container">
+         <span class="span-live-estudiante">¿Como ingreso a mi curso?</span> 
+         <div class="row justify-content-evenly pt-4">
+             <div class="col-lg-4">
+                 <h2 class="badge bg-success fs-5">Primero <i class='bx bx-search bx-burst text-warning'></i></h2>
+                <p>Busca el streaming que deseas observar, verifica que sea impartido por el instructor de tu agrado, 
+                    recuerda que los streaming pueden ser terminados en el tiempo que el instructor lo desee. </p>
+             </div>
+             <div class="col-lg-4">
+                 <h2 class="badge bg-success fs-5">Segundo <i class='bx bxs-mouse bx-burst text-warning'></i></h2>
+                <p>Da un click en el título del streaming que deseas ingresar, espera un momento a que tu instructor 
+                    de inicio a su streaming. </p>
+             </div>
+             <div class="col-lg-4">
+                 <h2 class="badge bg-success fs-5">Tercer <i class='bx bx-desktop bx-burst text-warning'></i></h2>
+                <p>Te recomendamos visualizar tu streaming de tu agrado mediante un ordenador para tener una mejor 
+                    experiencia al tomar tu curso, y visualizar mejor la transmisión. </p>
+             </div>
+         </div>
+    </div>
+</section>
+
+<section id="final-sesction">
+    <div class="container">
+        <span class="span-studient badge bg-warning text-dark">Consejo para ti</span> <i class='bx bx-heart-circle bx-burst text-warning'></i>
+        <div class="pt-5">
+        <p>Verifica tu conexión a internet si es estable o no presenta un retraso, 
+            queremos que obtengas la mejor experiencia al momento de visualizar tu streaming. </p>
+        </div>
+    </div>
+</section>
+

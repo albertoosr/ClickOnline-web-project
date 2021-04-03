@@ -1,0 +1,104 @@
+<section id="indexWelcome">
+    <div class="container">
+        <h2 class="text-welcome-user">Te damos la bienvenida, <strong>{{ usuario.nombre }}</strong></h2>
+        <div class="info-index-welcome" data-aos="fade-up" data-aos-delay="100">
+           <div class="row">
+               <div class="col-lg-6">
+                   <h3 class="text-start-transmitision">Empieza a transmitir en Click Online</h3>
+                   <p class="text-start-stream mb-5">Es importante saber que debes de transmitir desde un ordenador, 
+                       contando una cámara de video, micrófono sea interno o externo, de esta manera podrás mejorar 
+                       tu experiencia.</p>
+                    <p class="text-start-stream">Click Online, es una plataforma Web de streaming enfocado a 
+                        cursos online que son impartidos por instructores capacitados en diversos temas, 
+                        tiene como finalidad capacitar aquellas personas que desean aprender un nuevo tema. :)</p>
+               </div>
+               <div class="col-lg-6">
+                   <img src="/img/global/stream.png" class="img-start-streaming w-100" alt="click online">
+               </div>
+           </div>
+        </div>
+    </div>
+</section>
+
+<section id="indexUser">
+    <div class="container">
+        <div class="container">
+            <h3 class="fw-bold pb-5">Algunos temas que puedes encontrar <strong>{{ usuario.nombre }}</strong> 
+            <i class='bx bxs-meteor bx-burst text-warning'></i></h3>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card card-temas">
+                        <div class="card-body">
+                            <p class="card-text text-center fst-italic">Programación</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-temas">
+                        <div class="card-body">
+                            <p class="card-text text-center fst-italic">Diseño Web</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-temas">
+                        <div class="card-body">
+                            <p class="card-text text-center fst-italic">Arquitectura</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-temas">
+                        <div class="card-body">
+                            <p class="card-text text-center fst-italic">Administración</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-light bg-light my-5">
+            <div class="mensaje-perfil" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="pb-3">Contamos con instructores capacitado para tu mejor entendimiento</h3>
+                <p class="text-navbar-instructor lh-sm fst-italic">Para Click Online es importante que los temas 
+                    impartidos por los instructores sean entendibles para sus estudiantes, 
+                    es por ello que los instructores requieren de una experiencia acerca del tema que compartirá 
+                    con sus estudiantes mediante directos sin ninguna interrupción.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="final-sesction">
+    <div class="container">
+        <h3 class="fw-bold pb-4">¿Por qué utilizar <strong>Click Online</strong>? 
+        <i class='bx bxs-webcam bx-burst text-warning'></i></h3>
+        <div data-aos="fade-up" data-aos-delay="100">
+        <p>Click online te ofrece aprender mediante directos impartidos por tus instructores, 
+            sin necesidad de descargar aplicaciones externas, o descargar videos, solo con contar 
+            con un ordenador podrás visualizar y en caso de ser instructores solo requieres de una cámara y micrófono. </p>
+        </div>
+    </div>
+</section>
+
+<section id="final-sesction">
+    <div class="container">
+        <span class="span-studient badge bg-warning text-dark">¿Eres un estudiante?, Esto te puede interesar</span> <i class='bx bx-heart-circle bx-burst text-warning'></i>
+        <div class="pt-5">
+        <p>Si eres un estudiante, lo único que necesitas es contar con un ordenador conectado a internet,
+            te recomendamos verificar tu conexión a internet antes de ingresar a un streaming. </p>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Initi AOS
+window.addEventListener('load', () => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false
+    });
+  });
+</script>
