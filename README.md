@@ -65,7 +65,7 @@ npm install nodemon -D
 npm install -g peer
 ```
 
-_Ejecución de peerjs_
+##### Ejecución de peerjs
 
 NOTA: debe ejecutarse en una segunda terminal 
 
