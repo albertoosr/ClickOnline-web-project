@@ -16,11 +16,10 @@ _¿Qué necesitas para el funcionamiento del proyecto?_
 
 Instala en tu ordenador lo siguiente 
 
-```
-npm: https://www.npmjs.com/
-Node js: https://nodejs.org/es/
-Peer js: https://peerjs.com/
-```
+npm: (https://www.npmjs.com/)
+Node js: (https://nodejs.org/es/)
+Peer js: (https://peerjs.com/)
+
 
 ### Instalación 🔧
 
