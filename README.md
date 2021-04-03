@@ -89,11 +89,11 @@ Versión 1.0 en espera de reingeniería
 
 ## Derechos y Licencia 📄
 
-todos los derechos y licencia son pertenecientes a la organización Consultores Revolucionarios En Tecnología.
+Todos los derechos de autor y licencia son pertenecientes a la organización Consultores Revolucionarios En Tecnología.
 
 ## Expresiones de Gratitud 🎁
 
-Gracias a la organización Consultores Revolucionarios En Tecnología por permitirme realizar mis estadías profesionales en sus sus instalaciones 🤓.
+Gracias a la organización Consultores Revolucionarios En Tecnología por permitirme realizar mis estadías profesionales en sus instalaciones 🤓.
 
 ---
 #### Juan Alberto [albertoosr](https://github.com/albertoosr)
