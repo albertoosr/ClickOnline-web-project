@@ -1,4 +1,4 @@
-![index](https://user-images.githubusercontent.com/62088439/113485901-4979d780-946d-11eb-89c4-0dd1be9f6e51.png)
+![click](https://user-images.githubusercontent.com/62088439/121050475-37bef400-c77e-11eb-80ab-79f702da3e10.png)
 
 # Click Online 
 
@@ -93,7 +93,7 @@ Todos los derechos de autor y licencia son pertenecientes a la organización Con
 
 ## Expresiones de Gratitud 🎁
 
-Gracias a la organización Consultores Revolucionarios En Tecnología por permitirme realizar mis estadías profesionales en sus instalaciones 🤓.
+Gracias a la organización Consultores Revolucionarios En Tecnología por permitirme realizar el presente proyecto 🤓.
 
 ---
 #### Juan Alberto [albertoosr](https://github.com/albertoosr)
